@@ -236,7 +236,7 @@ footer {
 }
 
 @media(max-width: 980px) {
-    header,
+    /* header,
     .page-title,
     header nav,
     header li,
@@ -247,30 +247,51 @@ footer {
         text-align: center;
         margin: 20px auto;
         width: 100%;
-    }
+    } */
     .container {
-        width:100%;
+        width:95%;
         margin: 0 auto;
     }
-    .column.main,
+    .column.main {
+        position: relative;
+        float: left;
+        width: 50%;
+        margin-right: 4%;
+        /* text-align: left;
+        margin: 20px auto;
+        padding: 10px 5%;
+        min-height: 175px; */
+    }
     .column.side {
         position: relative;
         float: left;
-        width: 90%;
-        text-align: left;
+        /* width: 220px; */
+        width:30%;
+        /* text-align: left;
         margin: 20px auto;
         padding: 10px 5%;
-        min-height: 175px;
+        min-height: 175px; */
 
     }
     main {
-        padding: 20px;
+        padding: 0px;
         padding-bottom: 150px;
+    }
+    .p-img {
+        float: left;
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    .halfer {
+        float: left;
+        width: 100%;
+        margin: 0%;
     }
 }
 
 @media(max-width: 768px) {
-    header,
+    /* header,
     .page-title,
     header nav,
     header li,
@@ -281,9 +302,19 @@ footer {
         text-align: center;
         margin: 20px auto;
         width: 100%;
+    } */
+
+    header nav {
+        padding-right:2%;
+        margin-top:35px;
     }
+
+    .page-title h1 {
+        font-size: 25px;
+    }
+    
     .container {
-        width:100%;
+        width:95%;
         margin: 0 auto;
     }
     .column.main,
@@ -298,9 +329,21 @@ footer {
 
     }
     main {
-        padding: 20px;
+        padding: 0px;
         padding-bottom: 150px;
     }
+    .p-img {
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+    }
+    
+    .halfer {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+
 }
 
 
@@ -314,12 +357,12 @@ footer {
     .input-message {
         float: none;
         text-align: center;
-        margin: 20px auto;
+        margin: 0px auto 20px auto;
         width: 100%;
     }
     
     main {
-        padding: 20px;
+        padding: 0px 20px;
         padding-bottom: 150px;
     }
 
@@ -343,5 +386,11 @@ footer {
         float: left;
         width: 100%;
         padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    .halfer {
+        float: left;
+        width: 100%;
+        margin: 0%;
     }
 }
