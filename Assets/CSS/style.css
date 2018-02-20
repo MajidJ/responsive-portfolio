@@ -20,7 +20,7 @@ body {
     padding: 0;
     margin: 0 auto;
     /* background-color:#f4f4f4; */
-    background-image: url('assets/Images/whirlpool.png');
+    background-image: url('../Images/whirlpool.png');
     min-height: 100%;
     padding-bottom: 20px;
 }
