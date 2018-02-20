@@ -15,11 +15,14 @@ Main content border color: #dddddd*/
 
 
 body {
+    position: relative;
     font: 15px/1.5 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     padding: 0;
     margin: 0 auto;
     /* background-color:#f4f4f4; */
     background-image: url('../Images/whirlpool.png');
+    min-height: 100%;
+    padding-bottom: 20px;
 }
 
 .container {
@@ -103,7 +106,7 @@ main {
 }
 
 
-.column.main {
+.column.big {
     width: 600px; /* main width 600px + column padding 25px*2 = 650px */
     margin-right: 40px;
 }
@@ -222,12 +225,15 @@ form {
 /* footer */
 
 footer {
-    position: fixed;
-    left: 0;
+    position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
+    /* padding: 1rem; */
+    
     width: 100%;
     padding: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: #ffffff;
     background-color: #666666;
     border-top: #4aaaa5 10px solid;
@@ -252,7 +258,7 @@ footer {
         width:95%;
         margin: 0 auto;
     }
-    .column.main {
+    .column.big {
         position: relative;
         float: left;
         width: 50%;
@@ -317,7 +323,7 @@ footer {
         width:95%;
         margin: 0 auto;
     }
-    .column.main,
+    .column.big,
     .column.side {
         position: relative;
         float: left;
@@ -337,7 +343,7 @@ footer {
         width: 50%;
         padding-right: 20px;
     }
-    
+
     .halfer {
         float: left;
         width: 48%;
@@ -348,7 +354,6 @@ footer {
 
 
 @media(max-width: 640px) {
-    header,
     .page-title,
     header nav,
     header li,
@@ -360,18 +365,34 @@ footer {
         margin: 0px auto 20px auto;
         width: 100%;
     }
+
+    header {
+        float: none;
+        text-align: center;
+        margin: 0px auto 20px auto;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
     
     main {
         padding: 0px 20px;
         padding-bottom: 150px;
     }
 
+    .content {
+        margin-top: 170px;
+        z-index: 5;
+    }
+
+     
+
     .container {
         width:100%;
         margin: 0 auto;
     }
 
-    .column.main,
+    .column.big,
     .column.side {
         position: relative;
         float: left;
